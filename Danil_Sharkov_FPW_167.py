@@ -14,12 +14,12 @@ cells = [[" "] * 3 for i in range(3)]
 # ["","",""],
 # ["","",""]]
 
-def show():
-    print()
-    for i in range(3):
-        row_info = " ".join(cells[i])
-        print(f"{i} {row_info} ") # {cells[i][0]} {cells[i][1]} {cells[i][2]}
-        print("  --------------- ")
+# def show():
+#     print()
+#     for i in range(3):
+#         row_info = " ".join(cells[i])
+#         print(f"{i} {row_info} ") # {cells[i][0]} {cells[i][1]} {cells[i][2]}
+#         print("  --------------- ")
 
 def show():
     print()
@@ -33,42 +33,42 @@ def show():
 
 # выигрышные комбинации
 
-def check_win():
-    for i in range(3):
-        symbols = []
-        for j in range(3):
-            symbols.append(cells[i][j])
-    if symbols == ["X","X","X"]:
-        return True
+# def check_win():
+#     for i in range(3):
+#         symbols = []
+#         for j in range(3):
+#             symbols.append(cells[i][j])
+#     if symbols == ["X","X","X"]:
+#         return True
 
 
 
-    for i in range(3):
-        symbols = []
-        for j in range(3):
-            symbols.append(cells[j][i])
-    if symbols == ["X","X","X"]:
-        return True
+#     for i in range(3):
+#         symbols = []
+#         for j in range(3):
+#             symbols.append(cells[j][i])
+#     if symbols == ["X","X","X"]:
+#         return True
 
 
 
-    for i in range(3):
-        symbols = []
-        for j in range(3):
-            symbols.append(cells[i][i])
-    if symbols == ["X","X","X"]:
-        return True
+#     for i in range(3):
+#         symbols = []
+#         for j in range(3):
+#             symbols.append(cells[i][i])
+#     if symbols == ["X","X","X"]:
+#         return True
 
 
 
-    for i in range(3):
-        symbols = []
-        for j in range(3):
-            symbols.append(cells[i][2-i])
-    if symbols == ["X","X","X"]:
-        return True
+#     for i in range(3):
+#         symbols = []
+#         for j in range(3):
+#             symbols.append(cells[i][2-i])
+#     if symbols == ["X","X","X"]:
+#         return True
 
-    return False
+#     return False
 def check_win():
     win_cord = (((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)), ((2, 0), (2, 1), (2, 2)),
                 ((0, 2), (1, 1), (2, 0)), ((0, 0), (1, 1), (2, 2)), ((0, 0), (1, 0), (2, 0)),
